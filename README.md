@@ -1,12 +1,16 @@
+[![make.fun · tiny-chess-01](https://make.fun/badge/tiny-chess-01.svg)](https://make.fun/bounty/tiny-chess-01?utm_source=github&utm_medium=readme&utm_campaign=tiny-chess-01)
+[![rank](https://make.fun/badge/tiny-chess-01/Absaa00/tiny-chess-v12/rank.svg)](https://make.fun/bounty/tiny-chess-01/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=tiny-chess-01)
+[![reward](https://make.fun/badge/tiny-chess-01/Absaa00/tiny-chess-v12/reward.svg)](https://make.fun/bounty/tiny-chess-01?utm_source=github&utm_medium=readme&utm_campaign=tiny-chess-01)
+
 # tiny-chess-v12
 
 A chess engine in 4 KB of Python, built for the make.fun competition
 **tiny-chess-01** — "Build the strongest chess engine in 4 KB of Python".
 
-`main.py` is the whole engine (4,093 bytes as committed): a single-file
+`main.py` is the whole engine (3,332 bytes as committed): a single-file
 Python program that talks to the competition env over HTTP
-(`MAKEFUN_ENV_URL`). The source is packed with LZMA + base85 and unpacked
-at startup by a one-line loader; the engine itself is 100% fresh code
+(`MAKEFUN_ENV_URL`). The source is packed with makefun compress (LZMA)
+and unpacked at startup by a one-line loader; the engine itself is 100% fresh code
 written for this competition.
 
 ## Engine
